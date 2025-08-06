@@ -18,7 +18,7 @@ st.sidebar.image(logo_url3, use_column_width=True, width=800)
 st.image(logo_url, use_column_width=True, width=800)
 
 # Texto de abertura
-abertura = st.write("Hello! I'm Aligner BotBot, an AI-powered virtual assistant here to help you with guidance on the use and care of orthodontic aligners.. To start, simply type 'hello' in your native language (for example: Hi, Oi, Hola, Salut, Hallo, 你好, привет), or enter any questions you have about breastfeeding in the field below.")
+abertura = st.write("Hello! I'm HearBot, a virtual assistant powered by AI, here to guide you with any questions you may have about the use and care of hearing aids. To get started, please type 'hello' in your native language (for example: Hi, Oi, Hola, Salut, Hallo, 你好, привет), and let me know your age so we can begin our conversation.")
 
 # Título da barra lateral
 st.sidebar.title("References")
@@ -81,7 +81,7 @@ st.sidebar.markdown(
 def render_chat(hst_conversa):
     for i in range(1, len(hst_conversa)):
         if i % 2 == 0:
-            msg("**AlignerBot**:" + hst_conversa[i]['content'], key=f"bot_msg_{i}")
+            msg("**Listen Well Bot**:" + hst_conversa[i]['content'], key=f"bot_msg_{i}")
         else:
             msg("**You**:" + hst_conversa[i]['content'], is_user=True, key=f"user_msg_{i}")
 
@@ -113,4 +113,5 @@ if text_input_center:
 # RENDERIZAÇÃO DA CONVERSA
 if len(st.session_state.hst_conversa) > 1:
     render_chat(st.session_state.hst_conversa)
+
 
