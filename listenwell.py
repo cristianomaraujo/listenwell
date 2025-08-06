@@ -72,7 +72,7 @@ st.sidebar.markdown(
         text-align: center;
     }
     </style>
-    <div class="footer"> MommyBot enables conversations in over 50 languages. Start chatting in your native language. </b></div>
+    <div class="footer"> Listen Well Bot enables conversations in over 50 languages. Start chatting in your native language. </b></div>
     """,
     unsafe_allow_html=True
 )
@@ -113,6 +113,7 @@ if text_input_center:
 # RENDERIZAÇÃO DA CONVERSA
 if len(st.session_state.hst_conversa) > 1:
     render_chat(st.session_state.hst_conversa)
+
 
 
 
