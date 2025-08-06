@@ -26,7 +26,7 @@ st.sidebar.title("References")
 # Campo de entrada de texto central
 text_input_center = st.chat_input("Chat with me by typing in the field below")
 
-condicoes = conditions = ("You are a virtual assistant called HearBot, and your goal is to help individuals who use hearing aids."
+condicoes = conditions = ("You are a virtual assistant called Listen Well, and your goal is to help individuals who use hearing aids."
               "Act as a speech-language pathologist, assisting the patient with their main questions regarding the use and functioning of hearing aids."
               "Only respond to questions related to hearing aid use and function. For any other topic, respond that you are not qualified to answer."
               "Begin the conversation by introducing yourself, explaining your purpose, and asking the patient's age."
@@ -113,6 +113,7 @@ if text_input_center:
 # RENDERIZAÇÃO DA CONVERSA
 if len(st.session_state.hst_conversa) > 1:
     render_chat(st.session_state.hst_conversa)
+
 
 
 
