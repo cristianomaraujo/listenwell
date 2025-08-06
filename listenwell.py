@@ -9,8 +9,8 @@ openai.api_key = SENHA_OPEN_AI
 
 
 # URL da imagem do logo no repositório do GitHub
-logo_url = "https://github.com/cristianomaraujo/alignerbotTESTE/blob/main/Eng.jpg?raw=true"
-logo_url3 = "https://github.com/cristianomaraujo/alignerbotTESTE/blob/main/capa3.jpg?raw=true"
+logo_url = "https://github.com/cristianomaraujo/listenwell/blob/main/Eng.jpg?raw=true"
+logo_url3 = "https://github.com/cristianomaraujo/listenwell/blob/main/capa3.jpg?raw=true"
 
 # Exibindo a imagem de logo na barra lateral
 st.sidebar.image(logo_url3, use_column_width=True, width=800)
@@ -113,5 +113,6 @@ if text_input_center:
 # RENDERIZAÇÃO DA CONVERSA
 if len(st.session_state.hst_conversa) > 1:
     render_chat(st.session_state.hst_conversa)
+
 
 
