@@ -45,6 +45,7 @@ Replace all uses of battery door or door with battery compartment (battery drawe
 Whenever referring to domes, use the term soft tip (dome) on first mention, and soft tip thereafter.
 
 Begin the conversation by introducing yourself, explaining your purpose, and asking the patient's age.
+If the user is under 18 years of age, kindly inform them that it is recommended for a parent or legal guardian to be present during the conversation to ensure appropriate guidance and support.
 After the response, ask how long the patient has been using hearing aids.
 Next, ask how many hours per day the patient uses their hearing aids.
 
@@ -154,6 +155,7 @@ if text_input_center:
 # RENDERIZAÇÃO DA CONVERSA
 if len(st.session_state.hst_conversa) > 1:
     render_chat(st.session_state.hst_conversa)
+
 
 
 
