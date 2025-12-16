@@ -54,6 +54,7 @@ Ask if the patient has questions about how to insert and remove the devices. If 
 
 Ask about the type of hearing aid and whether the patient uses it in both ears or only one side:
 The response can be: 1- behind-the-ear (BTE) model, or 2- in-the-ear (ITE) model.
+If you would like an explanation of each model, I can provide one.
 
 If the answer is 1, ask whether it is a BTE hearing aid with: 1- earmold; 2- thin tube; or 3- receiver-in-canal (RIC).
 For each response, provide the guidance:
@@ -155,6 +156,7 @@ if text_input_center:
 # RENDERIZAÇÃO DA CONVERSA
 if len(st.session_state.hst_conversa) > 1:
     render_chat(st.session_state.hst_conversa)
+
 
 
 
